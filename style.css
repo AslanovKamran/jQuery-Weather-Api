@@ -1,0 +1,13 @@
+#cityList>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#cityList>li>i{
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+#cityList>li>i:hover{
+    transform: scale(1.2);
+}

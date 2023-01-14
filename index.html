@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weater Api</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container mt-2">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div id="weather" hidden>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title" id="weatherName"></h5>
+                          <h6 class="card-subtitle mb-2 text-muted" id="weatherDesc"></h6>
+                          <p class="card-text" id="weatherTemperature"></p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+           
+           
+            <div class="col-md-4">
+
+                <div class="card" style="width: 18rem;">
+                    <ul id="cityList" class="list-group list-group-flush">
+                        <!-- <li class="list-group-item">Baku<i class="fa fa-trash text-danger"></i></li>
+                        <li class="list-group-item">London<i class="fa fa-trash text-danger"></i></li>
+                        <li class="list-group-item">Kiev<i class="fa fa-trash text-danger"></i></li> -->
+                    </ul>
+                </div>
+
+                <div class="input-group mt-3" style="width: 18rem;">
+                    <input type="text" class="form-control basicAutoComplete" id="cityInput" placeholder="City...">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="addCity">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
